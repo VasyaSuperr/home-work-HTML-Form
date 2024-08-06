@@ -22,3 +22,30 @@ function inputHandler(e) {
     e.target.classList.add("invalid");
   }
 }
+
+document.querySelector("#contactForm").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  const firstName = e.target["user-first-name"].value;
+  const lastName = e.target["user-last-name"].value;
+  const email = e.target["user-email"].value;
+  const userPhone1 = e.target["user-phone-1"].value;
+  const userPhone2 = e.target["user-phone-2"].value;
+  const userPhone3 = e.target["user-phone-3"].value;
+  const subject = e.target["subject"].value;
+  const message = e.target["message"].value.trim().replace(/\s+/g, " ");
+
+  const phone = `${userPhone1}${userPhone2}${userPhone3}`;
+
+  const dataForm = {
+    name: `${firstName} ${lastName}`,
+    email: email,
+    phone: phone,
+    subject: subject,
+    message: message,
+  };
+
+  console.log(dataForm);
+}
