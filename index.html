@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Contact form</h1>
+      <p>Please fill in your information and we'll be sending your order.</p>
+      <form>
+        <label>
+          <span>Your name</span>
+          <input
+            class=""
+            type="text"
+            name="user-first-name"
+            placeholder="first name"
+            autofocus
+            required
+          />
+          <input
+            class=""
+            type="text"
+            name="user-last-name"
+            placeholder="last name"
+            required
+          />
+        </label>
+        <label>
+          <span>Your email</span>
+          <input
+            type="email"
+            name="user-email"
+            placeholder="your_mail@mail.com"
+            required
+          />
+          <label>
+            <span>Phone*</span>
+            <input type="tel" name="user-phone-1" placeholder="000" />
+            <input type="tel" name="user-phone-2" placeholder="000" />
+            <input type="tel" name="user-phone-3" placeholder="0000" />
+          </label>
+        </label>
+        <label>
+          <span>Message subject*</span>
+          <select name="subject" size="1">
+            <option value="order">Order</option>
+            <option value="feedback">Feedback</option>
+            <option value="complaint">Complaint</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <label>
+          <span>Message*</span>
+          <textarea name="message" maxlength="250"> </textarea>
+        </label>
+        <button type="submit">SUBMIT FORM</button>
+      </form>
+    </main>
+  </body>
+</html>
