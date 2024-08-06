@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(https://images.wallpaperscraft.ru/image/single/oblako_nebo_samolet_205024_3840x2400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  box-shadow: 0 0 20px lavender;
+  border-radius: 10px;
+  padding: 50px 35px;
+  max-width: 800px;
+  width: 100%;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.form-head {
+  text-align: start;
+  padding-bottom: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.subtext-title {
+  font-style: italic;
+  padding-bottom: 25px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.label-caption {
+  display: flex;
+  max-width: 150px;
+  width: 100%;
+  flex: 1 1 140px;
+  font-weight: bolder;
+}
+
+.form-component-regular {
+  flex: 1 1 240px;
+  padding: 10px;
+  outline: none;
+}
+
+.regular-div-inputs {
+  display: flex;
+  gap: 20px;
+  flex: 1 1 240px;
+}
+
+.form-input-one-more {
+  width: 100%;
+  padding: 10px;
+}
+
+.red-star {
+  color: palevioletred;
+}
+
+.submit-btn {
+  position: relative;
+  background-color: rgba(230, 230, 250, 0.5);
+  color: palevioletred;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+}
+
+.submit-btn::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid lavender;
+}
+
+.submit-btn:hover {
+  background-color: rgba(107, 107, 107, 0.3);
+  color: purple;
+  cursor: pointer;
+}
