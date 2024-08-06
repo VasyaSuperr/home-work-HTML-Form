@@ -6,7 +6,7 @@
     <title>Contact form</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
   </head>
   <body>
     <main>
@@ -21,6 +21,8 @@
             <input
               class="form-input-one-more"
               type="text"
+              minlength="2"
+              maxlength="64"
               name="user-first-name"
               placeholder="first name"
               autofocus
@@ -29,6 +31,8 @@
             <input
               class="form-input-one-more"
               type="text"
+              minlength="2"
+              maxlength="64"
               name="user-last-name"
               placeholder="last name"
               required
@@ -81,7 +85,7 @@
             <option value="other">Other</option>
           </select>
         </label>
-        <label class="form-label">
+        <label class="form-label form-label-message">
           <span class="label-caption">
             Message &nbsp<span class="red-star">*</span>
           </span>
